@@ -7,18 +7,23 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "DEBUG=app nodemon app.js",
     "esl": "./node_modules/.bin/eslint app.js",
-    "fix": "./node_modules/.bin/eslint app.js --fix"
+    "fix": "./node_modules/.bin/eslint app.js --fix",
+    "lt": "lt --port 3000 --subdomain charles"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",
-    "debug": "2.6.6",
+    "cookie-parser": "^1.4.3",
+    "debug": "^4.0.1",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "express-session": "^1.15.6",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "pug": "^2.0.3"
   },
